@@ -28,7 +28,7 @@ def load_bin_data(file_path:str) -> np.ndarray:
 
 # 加载数据，这里加载 bin 格式数据
 # skull_txt = load_txt_data("01_pointCloudFoundation/data/Skull.txt")
-KITTI_bin = load_bin_data("./pointData/000002.bin")
+KITTI_bin = load_bin_data("./01_pointCloudFoundation/data/000002.bin")
 
 # 预处理：去噪与降采样
 cl, ind = KITTI_bin.remove_statistical_outlier(nb_neighbors=50, std_ratio=1.5)

@@ -64,7 +64,7 @@ def visualize_with_open3d(points: np.ndarray, color_mode: str = "height") -> Non
 
 # 示例调用
 if __name__ == "__main__":
-    bin_path = "./pointData/000002.bin"  # 数据实际路径
+    bin_path = "./01_pointCloudFoundation/data/000000.bin"  # 数据实际路径
 
     # 加载点云（保留反射强度）
     points = load_kitti_bin(bin_path, remove_reflectance=False)

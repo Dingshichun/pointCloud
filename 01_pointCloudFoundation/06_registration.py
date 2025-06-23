@@ -162,8 +162,8 @@ def register_kitti_point_clouds(source_path, target_path):
 if __name__ == "__main__":
     # 实际路径。由于没有在不同视角采集的同一个场景的点云数据
     # 所以使用相同的点云文件进行配准，配准结果自然为 1。
-    source_path = "./pointData/000000.bin"  
-    target_path = "./pointData/000000.bin"  
+    source_path = "./01_pointCloudFoundation/data/000000.bin"  
+    target_path = "./01_pointCloudFoundation/data/000000.bin"  
     
     transformation_matrix = register_kitti_point_clouds(source_path, target_path)
     print("变换矩阵:\n", transformation_matrix)

@@ -112,7 +112,7 @@ def visualize_reconstruction(pcd: o3d.geometry.PointCloud, mesh: o3d.geometry.Tr
 # ==================== 4. 主流程 ====================
 if __name__ == "__main__":
     # 配置参数
-    bin_path = "./pointData/000000.bin"  # 数据的实际路径
+    bin_path = "./01_pointCloudFoundation/data/000000.bin"  # 数据的实际路径
     voxel_size = 0.2  # 下采样体素尺寸（米）
     reconstruction_method = "alpha"  # 可选："poisson" 或 "alpha"
     
